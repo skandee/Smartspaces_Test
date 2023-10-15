@@ -111,7 +111,8 @@ namespace App
         private bool IsValidEmail(string email) => !string.IsNullOrEmpty(email) && email.Contains("@") && email.Contains(".");
 
         private bool IsAdult(DateTime dateOfBirth) => MimimumAdultAge <= CalculateAge(dateOfBirth);
-
+        
+        //More enhancement can be done in this area
         private void SetCreditLimit(Customer customer, Company company)
         {
             var companyName = company?.Name;
